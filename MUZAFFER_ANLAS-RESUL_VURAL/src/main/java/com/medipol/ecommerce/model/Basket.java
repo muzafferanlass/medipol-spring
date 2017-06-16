@@ -20,4 +20,10 @@ public class Basket {
         //TODO
         return 0;
     }
+
+    public void remove(Product Product) {
+        items.remove(Product);
+    }
+
+
 }

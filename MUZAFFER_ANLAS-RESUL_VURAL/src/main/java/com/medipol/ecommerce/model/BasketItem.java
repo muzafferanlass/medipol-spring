@@ -5,7 +5,7 @@ public class BasketItem {
     private int quantity;
     private Product product;
 
-    public BasketItem(int quantity, Product product) {
+    public BasketItem(Product product , int quantity) {
         this.quantity = quantity;
         this.product = product;
     }
@@ -23,4 +23,7 @@ public class BasketItem {
         return quantity * product.getPrice();
     }
 
+    public void Quantity(int quantity) {
+        this.quantity = quantity;
+    }
 }

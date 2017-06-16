@@ -36,6 +36,10 @@ public class Product {
         return price;
     }
 
+    public Integer getQuantity() {
+        return getQuantity();
+    }
+
     public void setName(String name) {
         this.name = name;
     }

@@ -1,18 +1,19 @@
 package com.medipol.ecommerce.service;
 
 import com.medipol.ecommerce.model.Product;
-import com.sun.org.apache.bcel.internal.generic.Select;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 @Service
 public class ProductService {
 
     public List<Product> products = new ArrayList<Product>();
+
+
+
 
     public ProductService() {
 
@@ -20,7 +21,7 @@ public class ProductService {
         products.add(new Product(2, "adidas", 300));
     }
 
-    public void add(Integer id, String name, Integer price ){
+    public Product add(Integer id, String name, Integer price){
         //TODO
 
         products.add(new Product(id,name,price));
@@ -33,6 +34,7 @@ public class ProductService {
             System.out.println("\n");
 
         }
+        return null;
     }
 
     public void delete(Integer id) {
@@ -77,7 +79,6 @@ public class ProductService {
     public Product findBy(int productId) {
         //TODO
 
-
         for (int i = 0; i < products.size(); i++) {
             if (products.get(i).getId().equals(productId)) {
 
@@ -88,4 +89,6 @@ public class ProductService {
 
         return null;
     }
+
+
 }

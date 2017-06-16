@@ -58,7 +58,8 @@ public class ProductServiceTest {
 
         for(Product alertss : services.products) {
 
-            System.out.println("\n"+ "Product : " + alertss + "\n");
+
+
             System.out.println("Id : "+alertss.getId());
             System.out.println("Name : " + alertss.getName());
             System.out.println("Price : " + alertss.getPrice());

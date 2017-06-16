@@ -13,7 +13,7 @@ public class BasketItemTest {
         //create data
 
         final Product product = new Product(1, "jhk", 5);
-        final BasketItem basketItem = new BasketItem(1, product);
+        final BasketItem basketItem = new BasketItem(product, 1);
 
         //action
         final Integer result = basketItem.price();
